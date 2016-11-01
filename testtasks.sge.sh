@@ -14,8 +14,8 @@
 hostname
 date
 
-. /etc/profile.d/modules.sh
-module load shared sge julia/0.4.0 git/1.7.6 
+# Run application
+/home/uctpdtz/.julia/v0.5
 
 awk '{ for (i=0; i < $2; ++i) { print $1} }' $PE_HOSTFILE > /home/uctpdtz/Output/hosts$SGE_TASK_ID
 
