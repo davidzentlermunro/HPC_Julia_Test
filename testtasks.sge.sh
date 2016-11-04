@@ -15,7 +15,7 @@ hostname
 date
 
 # Run application
-/home/uctpdtz/.julia/v0.5
+/share/apps/julia-0.5.0/bin/julia 
 
 awk '{ for (i=0; i < $2; ++i) { print $1} }' $PE_HOSTFILE > /home/uctpdtz/Output/hosts$SGE_TASK_ID
 
