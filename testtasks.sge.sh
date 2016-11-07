@@ -9,6 +9,7 @@
 #$ -l tmem=1G 
 #$ -l h_vmem=1G 
 export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64:/share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
+source julia.src
 /share/apps/julia-0.5.0/bin/julia 
 awk '{ for (i=0; i < $2; ++i) { print $1} }' $PE_HOSTFILE > /home/uctpdtz/Output/hosts$SGE_TASK_ID
 echo "calling julia: Running Mod ${SGE_TASK_ID}"
