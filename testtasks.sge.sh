@@ -1,7 +1,7 @@
 #$ -S /bin/bash
 #$ -wd /home/uctpdtz/Status # <- working directory
 #$ -o julia-test.sgelog # <- name of output file
-#$ -j y # <- joint output and error files
+#$ -j y # <- joint output and error file
 #$ -N julia-test # <- name appearing on HPC status
 #$ -S /bin/bash # <- script language
 #$ -t 1-30 # <- Number of tasks (corresponds to number of nodes, and number of minimum wage runs)
