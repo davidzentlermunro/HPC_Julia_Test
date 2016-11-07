@@ -10,7 +10,7 @@
 #$ -l h_vmem=1G 
 
 # Run application
-export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64: /share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64:/share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
 
 /share/apps/julia-0.5.0/bin/julia 
 
