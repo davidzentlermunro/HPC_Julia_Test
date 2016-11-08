@@ -8,6 +8,7 @@
 #$ -l h_rt=24:0:0
 #$ -l tmem=1G 
 #$ -l h_vmem=1G 
+#$ -l hostname=burns*
 export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64:/share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
 echo "calling julia: Running Mod ${SGE_TASK_ID}"
 /share/apps/julia-0.5.0/bin/julia /home/uctpdtz/HPC_Julia_Test/tasktest.jl > /home/uctpdtz/Output/Results$SGE_TASK_ID.log
