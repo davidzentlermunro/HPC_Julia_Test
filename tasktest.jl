@@ -5,7 +5,7 @@ push!(LOAD_PATH, "/home/uctpdtz/HPC_Julia_Test")
 @everywhere using TestModule
 #using JLD
 
-y=fsq(parseint(ENV["SGE_TASK_ID"]))
+y=fsq(parse(Int64,ENV["SGE_TASK_ID"]))
 
 println("The square of ", ENV["SGE_TASK_ID"], " is ", y)
 
