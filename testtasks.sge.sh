@@ -6,8 +6,8 @@
 #$ -S /bin/bash # <- script language
 #$ -t 1-30 # <- Number of tasks (corresponds to number of nodes, and number of minimum wage runs)
 #$ -l h_rt=24:0:0
-#$ -l tmem=1G 
-#$ -l h_vmem=1G 
+#$ -l tmem=4G 
+#$ -l h_vmem=4G 
 #$ -l hostname=burns*
 export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64:/share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
 echo "calling julia: Running Mod ${SGE_TASK_ID}"
