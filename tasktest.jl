@@ -1,5 +1,5 @@
 println("Hello Hello. I am running on HPC and my ID is ", ENV["SGE_TASK_ID"])
-push!(LOAD_PATH, "/share/apps/julia-pkg/v0.5")
+cd("/share/apps/julia-pkg/v0.5")
 using JLD
 push!(LOAD_PATH, "/home/uctpdtz/HPC_Julia_Test")
 using TestModule
