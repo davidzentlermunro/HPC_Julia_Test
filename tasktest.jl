@@ -1,3 +1,4 @@
+println(Pkg.Dir.path())
 println("Hello Hello. I am running on HPC and my ID is ", ENV["SGE_TASK_ID"])
 using JLD
 push!(LOAD_PATH, "/home/uctpdtz/HPC_Julia_Test")
