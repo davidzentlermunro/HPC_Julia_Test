@@ -9,6 +9,8 @@
 #$ -l tmem=4G 
 #$ -l h_vmem=4G 
 #$ -l hostname=burns*
+rm -r /home/uctpdtz/Output/*
+rm -r /home/uctpdtz/Status/*
 export JULIA_PKGDIR=/share/apps/julia-pkg
 export LD_LIBRARY_PATH=/share/apps/gcc-6.2.0/lib64:/share/apps/gcc-6.2.0/lib:/share/apps/julia-0.5/lib:$LD_LIBRARY_PATH
 echo "calling julia: Running Mod ${SGE_TASK_ID}"
