@@ -4,7 +4,7 @@
 #$ -j y # <- joint output and error file
 #$ -N julia-test # <- name appearing on HPC status
 #$ -S /bin/bash # <- script language
-#$ -t 1-30 # <- Number of tasks (corresponds to number of nodes, and number of minimum wage runs)
+#$ -t 1-5 # <- Number of tasks (corresponds to number of nodes, and number of minimum wage runs)
 #$ -l h_rt=24:0:0
 #$ -l tmem=4G 
 #$ -l h_vmem=4G 
