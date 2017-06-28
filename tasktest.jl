@@ -7,5 +7,5 @@ using TestModule
 y=fsq(parse(Int64,ENV["SGE_TASK_ID"]))
 
 println("The square of ", ENV["SGE_TASK_ID"], " is ", y)
-save(File(format"JLD","/home/uctpdtz/Output/tasktest$ENV["SGE_TASK_ID"]"), "solcentral", y)
+save(File(format"JLD","/home/uctpdtz/Output/tasktest$ENV["SGE_TASK_ID"].jld"), "solcentral", y)
 #save("/home/uctpdtz/Output", "solcentral", y)
